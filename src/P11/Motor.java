@@ -1,6 +1,5 @@
 package P11;
 
-import javax.naming.directory.DirContext;
 
 public abstract class Motor {
     protected Door door;
