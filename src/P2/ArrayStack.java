@@ -14,29 +14,24 @@ public class ArrayStack {
         this.stackSize = stackSize;
     }    
     
-    
     public boolean isEmpty() {
         // CODE //
         return true;
     }
-    
     
     public boolean isFull() {
         // CODE //
         return true;
     }
     
-    
     public void push(int item) {
         // CODE //
     }
-    
     
     public int pop() {
         // CODE //
         return 0;
     }
-    
     
     public int peek() {
         // CODE //

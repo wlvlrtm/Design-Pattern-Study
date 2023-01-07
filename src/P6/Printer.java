@@ -1,12 +1,20 @@
 package P6;
 
 public class Printer {
-    private static int counter = 0;
+    private static Printer printer = new Printer();
+    private int counter = 0;
 
+    private Printer() {
+    }
 
-    public synchronized static void print(String str) {
-        counter++;
-        System.out.println(str);
+    public static Printer getPrinter() {
+        return printer;
+    }
+
+    public void Print(String contents) {
+        this.counter++;
+        System.out.println(this.counter);
+        System.out.print(contents);
     }
 
 }

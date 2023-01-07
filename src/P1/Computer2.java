@@ -21,6 +21,7 @@ public class Computer2 {
     private Memory ram;
     private PowerSupply power;
     
+    
     public Computer2(MainBoard mb, CPU cpu, Memory ram, PowerSupply power) {
         this.mb = mb;
         this.cpu = cpu;

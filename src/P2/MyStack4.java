@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class MyStack4<String> {
     private ArrayList<String> arList = new ArrayList<String>();
 
+    
     public void push(String element) {
         arList.add(element);
     }
