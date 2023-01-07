@@ -4,6 +4,7 @@ public class Printer {
     private static Printer printer = new Printer();
     private int counter = 0;
 
+
     private Printer() {
     }
 

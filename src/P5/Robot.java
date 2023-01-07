@@ -1,7 +1,7 @@
 package P5;
 
 public abstract class Robot {
-    private String name; 
+    private String name;
     private MovingStrategy movingStrategy;
     private AttackStrategy attackStrategy;
 
@@ -11,7 +11,15 @@ public abstract class Robot {
     }
 
     public String getName() {
-        return this.name;
+        return name;
+    }
+
+    public void move() {
+        this.movingStrategy.move();
+    }
+
+    public void attack() {
+        this.attackStrategy.attack();
     }
 
     public void setMovingStrategy(MovingStrategy movingStrategy) {
@@ -20,13 +28,5 @@ public abstract class Robot {
 
     public void setAttackStrategy(AttackStrategy attackStrategy) {
         this.attackStrategy = attackStrategy;
-    }
-
-    public void attack() {
-        this.attackStrategy.attack();
-    }
-
-    public void move() {
-        this.movingStrategy.move();
     }
 }
